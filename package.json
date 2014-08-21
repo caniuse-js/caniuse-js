@@ -1,0 +1,36 @@
+{
+  "name"            : "node-caniuse",
+  "description"     : "Check your code against a browser support matrix",
+
+  "version"         : "0.0.1",
+  "author"          : "Eric Baer <me@ericbaer.com>",
+
+  "homepage"        :"https://github.com/baer/node-caniuse",
+  "bugs": {
+    "url": "https://github.com/baer/node-caniuse/issues"
+  },
+
+  "repository"      :"git://github.com/baer/node-caniuse.git",
+  "private"         : false,
+
+  "dependencies": {
+    "commander"              : "2.3.0",
+    "underscore"             : "1.6.0",
+    "bluebird"               : "2.3.0"
+  },
+  "devDependencies": {
+    "gulp"                   : "3.8.7",
+    "gulp-jscs"              : "1.1.0",
+    "gulp-jshint"            : "1.8.4",
+    "jshint-stylish"         : "0.4.0"
+  },
+
+  "main":"./index.js",
+  "bin":"./index.js",
+
+  "engines":{
+    "node": ">= 0.4.0"
+  },
+
+  "license"         : "MIT"
+}
