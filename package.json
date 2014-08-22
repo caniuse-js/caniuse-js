@@ -15,6 +15,7 @@
 
   "dependencies": {
     "caniuse-db"             : "1.0.20140820",
+    "esprima"                : "1.2.2",
     "commander"              : "2.3.0",
     "underscore"             : "1.6.0",
     "bluebird"               : "2.3.0"
