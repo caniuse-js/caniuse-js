@@ -1,7 +1,3 @@
-#!/usr/bin/env node
+"use strict";
 
-'use strict';
-
-var cli = require('./lib/cli');
-
-cli(process.argv)
+module.exports = {};
