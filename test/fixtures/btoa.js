@@ -1,3 +1,3 @@
 'use-strict';
 
-var encodedData = window.btoa("Hello, world");
+var encodedData = window.btoa('Hello, world');

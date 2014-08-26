@@ -5,8 +5,9 @@ var jshint = require('gulp-jshint');
 var jscs   = require('gulp-jscs');
 
 var src = [
-  './lib/*.js',
-  './bin/*.js',
+  './lib/**/*.js',
+  './bin/**/*.js',
+  './test/**/*.spec.js',
   'index.js',
   'gulpfile.js'
 ];
