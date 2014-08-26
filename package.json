@@ -1,6 +1,6 @@
 {
   "name"            : "node-caniuse",
-  "description"     : "Check your code against a browser support matrix",
+  "description"     : "Check source code against a browser support matrix",
 
   "version"         : "0.0.1",
   "author"          : "Eric Baer <me@ericbaer.com>",

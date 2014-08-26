@@ -6,6 +6,7 @@ var jscs   = require('gulp-jscs');
 
 var src = [
   './lib/*.js',
+  './bin/*.js',
   'index.js',
   'gulpfile.js'
 ];
