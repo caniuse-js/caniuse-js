@@ -45,7 +45,7 @@ describe('util.js', function () {
         util.getFileList([__dirname + '/../fixtures/**/*.js'])
           .then(function (files) {
             assert(_.isArray(files));
-            assert.equal(files.length, 1);
+            assert.equal(files.length, 2);
             assert(_.contains(files, path.resolve(__dirname + '/../fixtures/btoa.js')));
             done();
           });
@@ -56,7 +56,7 @@ describe('util.js', function () {
         util.getFileList(__dirname + '/../fixtures/**/*.js')
           .then(function (files) {
             assert(_.isArray(files));
-            assert.equal(files.length, 1);
+            assert.equal(files.length, 2);
             assert(_.contains(files, path.resolve(__dirname + '/../fixtures/btoa.js')));
             done();
           });
