@@ -29,7 +29,7 @@
   },
 
   "main":"./index.js",
-  "bin":"./bin/cli.js",
+  "bin":"./bin/index.js",
 
   "engines":{
     "node": ">= 0.4.0"
