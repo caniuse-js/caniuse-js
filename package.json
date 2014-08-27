@@ -14,7 +14,7 @@
   "private"         : false,
 
   "dependencies": {
-    "caniuse-db"             : "1.0.20140821",
+    "caniuse-db"             : "1.0.20140826",
     "esprima"                : "1.2.2",
     "commander"              : "2.3.0",
     "underscore"             : "1.7.0",
