@@ -118,5 +118,26 @@ describe('util.js', function () {
       });
       assert(_.isArray(supportedBrowsers.ie));
     });
+
+    describe('Version Strings', function () {
+      it('should pass though a version string without a modifier', function () {
+        var supportedBrowsers = util.getSupportedBrowsers({
+          'firefox': '3.6'
+        });
+        assert(_.isEqual(supportedBrowsers, {
+          'firefox': ['3.6']
+        }));
+      });
+
+      it('should add all versions of a browser after and including a version string with a +',
+        function () {
+          var supportedBrowsers = util.getSupportedBrowsers({
+            'ie': '9+'
+          });
+          assert(_.isEqual(supportedBrowsers, {
+            'ie': ['9', '10', '11']
+          }));
+        });
+    });
   });
 });
