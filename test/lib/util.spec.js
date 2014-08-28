@@ -72,22 +72,31 @@ describe('util.js', function () {
     it('should ignore invalid browsers', function () {
       var supportedBrowsers = util.getSupportedBrowsers({
         'ie': ['6'],
-        'firefox': ['3.4'],
+        'firefox': ['3.6'],
         'prairieDog': ['1.0']
       });
       assert(_.isEqual(supportedBrowsers, {
         'ie': ['6'],
-        'firefox': ['3.4']
+        'firefox': ['3.6']
       }));
     });
 
     it('should ignore browsers with empty version lists', function () {
       var supportedBrowsers = util.getSupportedBrowsers({
         'ie': [],
-        'firefox': ['3.4']
+        'firefox': ['3.6']
       });
       assert(_.isEqual(supportedBrowsers, {
-        'firefox': ['3.4']
+        'firefox': ['3.6']
+      }));
+    });
+
+    it('should ignore invalid versions', function () {
+      var supportedBrowsers = util.getSupportedBrowsers({
+        'firefox': ['noop', '3.6']
+      });
+      assert(_.isEqual(supportedBrowsers, {
+        'firefox': ['3.6']
       }));
     });
 
@@ -95,19 +104,19 @@ describe('util.js', function () {
       var supportedBrowsers = util.getSupportedBrowsers({
         'ie': {},
         'chrome': 34,
-        'firefox': ['3.4']
+        'firefox': ['3.6']
       });
       assert(_.isEqual(supportedBrowsers, {
-        'firefox': ['3.4']
+        'firefox': ['3.6']
       }));
     });
 
     it('should return an Object with values of type Array', function () {
       var supportedBrowsers = util.getSupportedBrowsers({
         'ie': ['6'],
-        'firefox': ['3.4']
+        'firefox': ['3.6']
       });
-      assert(_.isArray(supportedBrowsers['ie']));
+      assert(_.isArray(supportedBrowsers.ie));
     });
   });
 });
