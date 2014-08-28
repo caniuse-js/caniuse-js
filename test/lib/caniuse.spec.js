@@ -36,22 +36,22 @@ describe('caniuse.js', function () {
 
   describe('query', function () {
     it('should ignore invalid browsers', function () {
-      var result = caniuse.query('atob', 'gopher', '6')
+      var result = caniuse.query('atob', 'gopher', '6');
       assert(_.isNull(result));
     });
 
     it('should ignore invalid browser+version combinations', function () {
-      var result = caniuse.query('atob', 'ie', 'tuna')
+      var result = caniuse.query('atob', 'ie', 'tuna');
       assert(_.isNull(result));
     });
 
     it('should return null if no match is found', function () {
-      var result = caniuse.query('notARealFeature', 'ie', '6')
+      var result = caniuse.query('notARealFeature', 'ie', '6');
       assert(_.isNull(result));
     });
 
     it('should return a support status String if a match is found', function () {
-      var result = caniuse.query('atob', 'ie', '6')
+      var result = caniuse.query('atob', 'ie', '6');
       assert(result === 'n');
     });
   });
