@@ -1,8 +1,8 @@
 {
   "name"            : "node-caniuse",
-  "description"     : "Check your code against a browser support matrix",
+  "description"     : "Check source code against a browser support matrix",
 
-  "version"         : "0.0.1",
+  "version"         : "0.0.2",
   "author"          : "Eric Baer <me@ericbaer.com>",
 
   "homepage"        :"https://github.com/baer/node-caniuse",
@@ -14,19 +14,31 @@
   "private"         : false,
 
   "dependencies": {
+    "caniuse-db"             : "1.0.20140826",
+    "esprima"                : "1.2.2",
     "commander"              : "2.3.0",
-    "underscore"             : "1.6.0",
-    "bluebird"               : "2.3.0"
+    "underscore"             : "1.7.0",
+    "bluebird"               : "2.3.2",
+    "glob"                   : "4.0.5",
+    "winston"                : "0.7.3"
   },
   "devDependencies": {
     "gulp"                   : "3.8.7",
     "gulp-jscs"              : "1.1.0",
+    "gulp-mocha"             : "1.0.0",
     "gulp-jshint"            : "1.8.4",
-    "jshint-stylish"         : "0.4.0"
+    "jshint-stylish"         : "0.4.0",
+
+    "mocha"                  : "1.21.4",
+    "chai"                   : "1.9.1"
   },
 
   "main":"./index.js",
-  "bin":"./index.js",
+  "bin":"./bin/index.js",
+
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/**/*.spec.js"
+  },
 
   "engines":{
     "node": ">= 0.4.0"
