@@ -1,5 +1,5 @@
 ## node-caniuse
-[![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
 
 > Check your code against a browser support matrix
 
@@ -26,3 +26,6 @@ node-caniuse --help
 
 [depstat-url]: https://david-dm.org/baer/node-caniuse
 [depstat-image]: https://david-dm.org/baer/node-caniuse.png
+
+[travis-url]: http://travis-ci.org/baer/node-caniuse
+[travis-image]: https://secure.travis-ci.org/baer/node-caniuse.png?branch=master
