@@ -1,7 +1,7 @@
 ## node-caniuse
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
 
-> Check your code against a browser support matrix
+> Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
 
 ## Usage
 
