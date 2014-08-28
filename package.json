@@ -2,7 +2,7 @@
   "name"            : "node-caniuse",
   "description"     : "Check source code against a browser support matrix",
 
-  "version"         : "0.0.1",
+  "version"         : "0.0.2",
   "author"          : "Eric Baer <me@ericbaer.com>",
 
   "homepage"        :"https://github.com/baer/node-caniuse",
