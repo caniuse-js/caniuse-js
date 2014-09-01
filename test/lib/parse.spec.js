@@ -6,12 +6,12 @@ var assert = chai.assert;
 /* global -Promise */
 var Promise = require('bluebird');
 var _ = require('underscore');
-var scanFiles = require('../../lib/scan.js');
+var parseFiles = require('../../lib/parse.js');
 
-describe('analyze.js', function () {
+describe('parse.js', function () {
   it('should return a promise that resolves to the results Array', function (done) {
     var filenames = [__dirname + '/../fixtures/atob.js'];
-    var promise = scanFiles(filenames);
+    var promise = parseFiles([], filenames);
     assert(promise instanceof Promise);
 
     promise.then(function (badTokens) {
