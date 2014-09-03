@@ -10,7 +10,7 @@ var parseFiles = require('../../lib/parse.js');
 
 describe('parse.js', function () {
   it('should return a promise that resolves to the results Array', function (done) {
-    var filenames = [__dirname + '/../fixtures/atob.js'];
+    var filenames = [__dirname + '/../fixtures/window/atob.js'];
     var promise = parseFiles([], filenames);
     assert(promise instanceof Promise);
 

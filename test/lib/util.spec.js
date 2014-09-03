@@ -20,22 +20,22 @@ describe('util.js', function () {
 
     it('should use resolve an array with a single file when passed a filename as a string',
        function (done) {
-         util.getFileList(__dirname + '/../fixtures/btoa.js')
+         util.getFileList(__dirname + '/../fixtures/window/btoa.js')
            .then(function (files) {
              assert(_.isArray(files));
              assert.equal(files.length, 1);
-             assert.equal(files[0], path.resolve(__dirname + '/../fixtures/btoa.js'));
+             assert.equal(files[0], path.resolve(__dirname + '/../fixtures/window/btoa.js'));
              done();
            });
        });
 
     it('should use resolve an array with a single file when passed a filename as an array',
       function (done) {
-        util.getFileList([__dirname + '/../fixtures/btoa.js'])
+        util.getFileList([__dirname + '/../fixtures/window/btoa.js'])
           .then(function (files) {
             assert(_.isArray(files));
             assert.equal(files.length, 1);
-            assert.equal(files[0], path.resolve(__dirname + '/../fixtures/btoa.js'));
+            assert.equal(files[0], path.resolve(__dirname + '/../fixtures/window/btoa.js'));
             done();
           });
       });
@@ -45,8 +45,8 @@ describe('util.js', function () {
         util.getFileList([__dirname + '/../fixtures/**/*.js'])
           .then(function (files) {
             assert(_.isArray(files));
-            assert.equal(files.length, 2);
-            assert(_.contains(files, path.resolve(__dirname + '/../fixtures/btoa.js')));
+            assert.equal(files.length, 8);
+            assert(_.contains(files, path.resolve(__dirname + '/../fixtures/window/btoa.js')));
             done();
           });
       });
@@ -56,8 +56,8 @@ describe('util.js', function () {
         util.getFileList(__dirname + '/../fixtures/**/*.js')
           .then(function (files) {
             assert(_.isArray(files));
-            assert.equal(files.length, 2);
-            assert(_.contains(files, path.resolve(__dirname + '/../fixtures/btoa.js')));
+            assert.equal(files.length, 8);
+            assert(_.contains(files, path.resolve(__dirname + '/../fixtures/window/btoa.js')));
             done();
           });
       });
