@@ -19,4 +19,30 @@ describe('parse.js', function () {
       done();
     });
   });
+
+  it('should resolve each file\'s tokens to the correct object format', function (done) {
+    var filenames = [__dirname + '/../fixtures/window/atob.js'];
+
+    parseFiles([], filenames)
+      .then(function (badTokens) {
+        _.each(badTokens, function (file) {
+          assert(!_.isUndefined(file.filename));
+          assert(_.isString(file.filename));
+          assert(!_.isUndefined(file.tokens));
+          assert(_.isArray(file.tokens));
+        })
+        done();
+      });
+  });
+
+  it('should ignore expressions called on an Object defined in the globalVariabvles Array',
+    function (done) {
+      var filenames = [__dirname + '/../fixtures/window/atob.js'];
+
+      parseFiles(['window'], filenames)
+        .then(function (badTokens) {
+          assert(_.isNull(badTokens));
+          done();
+        });
+    });
 });
