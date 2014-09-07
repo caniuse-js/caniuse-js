@@ -14,7 +14,7 @@
   "private"         : false,
 
   "dependencies": {
-    "caniuse-db"             : "1.0.20140826",
+    "caniuse-db"             : "1.0.20140906",
     "esprima"                : "1.2.2",
     "estraverse"             : "1.5.1",
     "commander"              : "2.3.0",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "gulp"                   : "3.8.7",
-    "gulp-jscs"              : "1.1.0",
+    "gulp-jscs"              : "1.1.2",
     "gulp-mocha"             : "1.0.0",
     "gulp-jshint"            : "1.8.4",
     "jshint-stylish"         : "0.4.0",
