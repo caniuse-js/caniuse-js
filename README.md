@@ -5,8 +5,6 @@
 
 ## Quick Start
 
-First, install `node-caniuse`
-
 ```shell
 npm install node-caniuse
 ```
@@ -40,7 +38,7 @@ Default: `{}`
 
 An object representing your browser support matrix in the following format:
 
-```
+```json
 {
   <browser-name>: <browser-versions>
 }
