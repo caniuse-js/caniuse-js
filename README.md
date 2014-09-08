@@ -3,9 +3,7 @@
 
 > Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
 
-## Quick Start
-
-First, install `node-caniuse`
+## Quick Start (Programatic Usage)
 
 ```shell
 npm install node-caniuse
@@ -97,6 +95,27 @@ caniuse({
   browsers: { Chrome: '>= 5' },
   gobalIgnores: '_'
 });
+```
+
+---
+
+## CLI Usage
+
+```shell
+npm install -g node-caniuse
+node-caniuse --help
+```
+
+```shell
+node-caniuse [files] {OPTIONS}
+
+Standard Options:
+
+    --reporter, -r  Specify the output reporter
+
+    --browsers, -b  The list of targeted browsers
+
+        --help, -h  Show this message
 ```
 
 ## License
