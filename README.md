@@ -1,7 +1,7 @@
 ## node-caniuse
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
 
-> Check your code against a browser support matrix
+> Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
 
 ## Usage
 
@@ -16,6 +16,33 @@ Then, to see what it can do just ask for help!
 ```shell
 node-caniuse --help
 ```
+
+##API Reference
+
+#### Browser Versions
+
+You can specify the browsers you want to target in your project in three ways
+
+* Direct selection - `[9, 10, 11]` or `'11'`
+* Versions newer than - `'> 9'` or `'>= 8'`
+* Versions with Global Usage greater than - `'> 10%'`
+
+#### Browser Names (case insensitive):
+
+* `Android` for old Android stock browser.
+* `BlackBerry` or `bb` for Blackberry browser.
+* `Chrome` for Google Chrome.
+* `Firefox` or `ff` for Mozilla Firefox.
+* `Explorer` or `ie` or `InternetExplorer` for Internet Explorer.
+* `iOS` or `ios_saf` for iOS Safari.
+* `Opera` for Opera.
+* `Safari` for desktop Safari.
+* `OperaMobile` or `op_mob` for Opera Mobile.
+* `OperaMini` or `op_mini` for Opera Mini.
+* `ChromeAndroid` or `and_chr` for Chrome for Android
+  (mostly same as common `Chrome`).
+* `FirefoxAndroid` or `and_ff` for Firefox for Android.
+* `ExplorerMobile` or `ie_mob` for Internet Explorer Mobile.
 
 ## License
 
