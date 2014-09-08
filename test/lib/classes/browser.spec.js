@@ -130,15 +130,15 @@ describe('browser.js', function () {
     });
 
     describe('all versions with global popularity greater than', function() {
-      it('should return an Array with all browser versions with global popularity greater than ' +
-         'the specifier', function() {
-        var browser = new Browser('chrome');
-        var browserList;
+      it('should return an Array with versions where global popularity > the specifier',
+        function() {
+          var browser = new Browser('chrome');
+          var browserList;
 
-        browserList = browser.getVersions('> 10%');
-        assert(_.contains(browserList, '36'));
-        assert(browserList.length === 1);
-      });
+          browserList = browser.getVersions('> 10%');
+          assert(_.contains(browserList, '36'));
+          assert(browserList.length === 1);
+        });
     });
   });
 });

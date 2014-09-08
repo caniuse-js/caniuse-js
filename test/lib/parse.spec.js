@@ -30,7 +30,7 @@ describe('parse.js', function () {
           assert(_.isString(file.filename));
           assert(!_.isUndefined(file.tokens));
           assert(_.isArray(file.tokens));
-        })
+        });
         done();
       });
   });
