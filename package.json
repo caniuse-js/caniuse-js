@@ -24,7 +24,7 @@
     "winston"                : "0.7.3"
   },
   "devDependencies": {
-    "gulp"                   : "3.8.7",
+    "gulp"                   : "3.8.8",
     "gulp-jscs"              : "1.1.2",
     "gulp-mocha"             : "1.0.0",
     "gulp-jshint"            : "1.8.4",
