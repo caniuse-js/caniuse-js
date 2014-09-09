@@ -18,20 +18,35 @@ caniuse({
     Chrome: '>= 5',
     Firefox: '>= 4'
     InternetExplorer: '>= 9'
-  }
+  },
+  reporter: 'console'
 });
 ```
 
-## Options
+## API Reference
 
-### files
+#####`caniuse(Object options [, Function callback])` -> `Promise`
+
+The result (for both the resolved Promise and for the callback) is an Array where each element represents a file and it's bad tokens.
+
+```
+[{
+  "filename" : "path/to/file"  // String
+  "location" : {...}           // Esprima Object
+  "feature"  : {}              // caniuse feature
+}]
+```
+
+**Note**: *The callback and the promise are equivalent and can be used interchangeably.*
+
+###### Option: `files`
 
 Type: `Array` `String`  
 Default: `[]`
 
 The files to be scanned by `caniuse`. Both the `String` and `Array` versions accept globs. E.g. `./src/**/*.js`
 
-### browsers
+###### Option: `browsers`
 
 Type: `Object`  
 Default: `{}`
@@ -67,12 +82,12 @@ An object representing your browser support matrix in the following format:
 * `FirefoxAndroid` or `and_ff` for Firefox for Android.
 * `ExplorerMobile` or `ie_mob` for Internet Explorer Mobile.
 
-### reporter
+###### Option: `reporter`
 
 Type: `String`  
 Default: `null`
 
-Specify the output format by choosing any of the [node-caniuse reporter](https://github.com/baer/node-caniuse/tree/master/lib/reporters)
+Specify the output format by choosing any of the [node-caniuse reporters](https://github.com/baer/node-caniuse/tree/master/lib/reporters)
 
 ```javascript
 caniuse({
@@ -82,7 +97,7 @@ caniuse({
 });
 ```
 
-### gobalIgnores
+###### Option: `gobalIgnores`
 
 Type: `Array`  
 Default: `[]`
