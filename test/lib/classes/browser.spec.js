@@ -10,7 +10,7 @@ describe('browser.js', function () {
   describe('Constructor', function () {
     it('should fail if no name is provided to the constructor', function () {
       try {
-        var browser = new Browser();
+        new Browser();
         assert(false);
       } catch (e) {
         assert(true);
@@ -19,10 +19,29 @@ describe('browser.js', function () {
 
     it('should fail if an invalid browser is provided to the constructor', function () {
       try {
-        var browser = new Browser('Umbrella');
+        new Browser('Umbrella');
         assert(false);
       } catch (e) {
         assert(true);
+      }
+    });
+
+    it('should accept any of the browser name aliases', function () {
+      try {
+        new Browser('fx');
+        new Browser('ff');
+        new Browser('ios');
+        new Browser('internetexplorer');
+        new Browser('explorer');
+        new Browser('blackberry');
+        new Browser('explorermobile');
+        new Browser('operamini');
+        new Browser('operamobile');
+        new Browser('chromeandroid');
+        new Browser('firefoxandroid');
+        assert(true);
+      } catch (e) {
+        assert(false);
       }
     });
 
