@@ -12,7 +12,11 @@
   </a>
 </p>
 
-> Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
+<h3 align="center">
+  Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
+</h3>
+
+***
 
 ## Quick Start
 
@@ -27,7 +31,7 @@ caniuse({
   files: './src/**/*.js',
   browsers: {
     Chrome: '>= 5',
-    Firefox: '>= 4'
+    Firefox: '>= 4',
     InternetExplorer: '>= 9'
   },
   reporter: 'console'
