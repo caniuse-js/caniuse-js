@@ -1,5 +1,16 @@
-# node-caniuse
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
+<h1 align="center">node-caniuse</h1>
+
+<p align="center">
+  <a title='Build Status' href="https://npmjs.org/package/node-caniuse">
+    <img src='http://img.shields.io/npm/v/npm.svg' />
+  </a>
+  <a href='https://david-dm.org/baer/node-caniuse'>
+    <img src='https://david-dm.org/baer/node-caniuse.svg' alt='Chat' />
+  </a>
+  <a href='http://travis-ci.org/baer/node-caniuse'>
+    <img src='https://secure.travis-ci.org/baer/node-caniuse.svg?branch=master' />
+  </a>
+</p>
 
 > Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
 
@@ -115,12 +126,3 @@ caniuse({
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)
-
-[npm-url]: https://npmjs.org/package/node-caniuse
-[npm-image]: https://badge.fury.io/js/node-caniuse.png
-
-[depstat-url]: https://david-dm.org/baer/node-caniuse
-[depstat-image]: https://david-dm.org/baer/node-caniuse.png
-
-[travis-url]: http://travis-ci.org/baer/node-caniuse
-[travis-image]: https://secure.travis-ci.org/baer/node-caniuse.png?branch=master
