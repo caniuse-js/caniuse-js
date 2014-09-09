@@ -12,9 +12,11 @@
   </a>
 </p>
 
-<h3 align="center">
-  Check your JavaScript + browser support matrix against the [Can I Use database](http://caniuse.com/)
-</h3>
+<h4 align="center">
+  Check your JavaScript + browser support matrix against the
+  <a href='http://caniuse.com'>Can I Use</a>
+  database
+</h4>
 
 ***
 
