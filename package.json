@@ -2,7 +2,7 @@
   "name"            : "node-caniuse",
   "description"     : "Check source code against a browser support matrix",
 
-  "version"         : "0.0.4",
+  "version"         : "0.1.0",
   "author"          : "Eric Baer <me@ericbaer.com>",
 
   "homepage"        : "https://github.com/baer/node-caniuse",
@@ -14,7 +14,7 @@
   "private"         : false,
 
   "dependencies": {
-    "caniuse-db"             : "1.0.20140906",
+    "caniuse-db"             : "1.0.20140909",
     "esprima"                : "1.2.2",
     "estraverse"             : "1.5.1",
     "commander"              : "2.3.0",
