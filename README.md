@@ -46,11 +46,13 @@ caniuse({
 
 The result (for both the resolved Promise and for the callback) is an Array where each element represents a file and it's bad tokens.
 
-```
+```javascript
 [{
-  "filename" : "path/to/file"  // String
-  "location" : {...}           // Esprima Object
-  "feature"  : {}              // caniuse feature
+  "filename" : "path/to/file",
+  "tokens"   : [{
+    token: "<invalid token>",
+    location: {...}
+  }]
 }]
 ```
 
