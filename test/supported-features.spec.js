@@ -20,8 +20,8 @@ describe('Supported Features', function () {
 
         var badFile = badTokens[0];
         assert(badFile.filename === __dirname + '/fixtures/window/atob.js');
-        assert(badFile.unsupportedTokens.length === 1);
-        assert(badFile.unsupportedTokens[0].token === 'atob');
+        assert(badFile.tokens.length === 1);
+        assert(badFile.tokens[0].token === 'atob');
         done();
       });
   });
@@ -40,8 +40,8 @@ describe('Supported Features', function () {
 
         var badFile = badTokens[0];
         assert(badFile.filename === __dirname + '/fixtures/window/btoa.js');
-        assert(badFile.unsupportedTokens.length === 1);
-        assert(badFile.unsupportedTokens[0].token === 'btoa');
+        assert(badFile.tokens.length === 1);
+        assert(badFile.tokens[0].token === 'btoa');
         done();
       });
   });
