@@ -2,7 +2,7 @@
   "name"            : "caniuse-js",
   "description"     : "Check source code against a browser support matrix",
 
-  "version"         : "0.2.0",
+  "version"         : "0.2.1",
   "author"          : "Eric Baer <me@ericbaer.com>",
 
   "homepage"        : "https://github.com/baer/node-caniuse",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "gulp"                   : "3.8.8",
     "gulp-jscs"              : "1.1.2",
-    "gulp-mocha"             : "1.0.0",
+    "gulp-mocha"             : "1.1.0",
     "gulp-jshint"            : "1.8.4",
     "jshint-stylish"         : "0.4.0",
 
