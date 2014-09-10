@@ -2,7 +2,7 @@
 
 <p align="center">
   <a title='Build Status' href="https://npmjs.org/package/node-caniuse">
-    <img src='http://img.shields.io/npm/v/npm.svg' />
+    <img src='http://img.shields.io/npm/v/node-caniuse.svg' />
   </a>
   <a href='https://david-dm.org/baer/node-caniuse'>
     <img src='https://david-dm.org/baer/node-caniuse.svg' alt='Chat' />
