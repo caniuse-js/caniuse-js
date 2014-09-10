@@ -1,5 +1,5 @@
 {
-  "name"            : "node-caniuse",
+  "name"            : "caniuse-js",
   "description"     : "Check source code against a browser support matrix",
 
   "version"         : "0.1.0",
