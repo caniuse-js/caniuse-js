@@ -1,14 +1,14 @@
 <h1 align="center">node-caniuse</h1>
 
 <p align="center">
-  <a title='Build Status' href="https://npmjs.org/package/node-caniuse">
-    <img src='http://img.shields.io/npm/v/node-caniuse.svg' />
+  <a title='Build Status' href="https://npmjs.org/package/caniuse-js">
+    <img src='http://img.shields.io/npm/v/caniuse-js.svg' />
   </a>
-  <a href='https://david-dm.org/baer/node-caniuse'>
-    <img src='https://david-dm.org/baer/node-caniuse.svg' alt='Chat' />
+  <a href='https://david-dm.org/caniuse-js/caniuse-js'>
+    <img src='https://david-dm.org/caniuse-js/caniuse-js.svg' alt='Chat' />
   </a>
-  <a href='http://travis-ci.org/baer/node-caniuse'>
-    <img src='https://secure.travis-ci.org/baer/node-caniuse.svg?branch=master' />
+  <a href='http://travis-ci.org/caniuse-js/caniuse-js'>
+    <img src='https://secure.travis-ci.org/caniuse-js/caniuse-js.svg?branch=master' />
   </a>
 </p>
 
