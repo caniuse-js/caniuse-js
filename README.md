@@ -56,14 +56,18 @@ The result (for both the resolved Promise and for the callback) is an Array wher
 
 **Note**: *The callback and the promise are equivalent and can be used interchangeably.*
 
-###### Option: `files`
+***
+
+###### > `option.files`
 
 Type: `Array` `String`  
 Default: `[]`
 
 The files to be scanned by `caniuse`. Both the `String` and `Array` versions accept globs. E.g. `./src/**/*.js`
 
-###### Option: `browsers`
+***
+
+###### > `options.browsers`
 
 Type: `Object`  
 Default: `{}`
@@ -99,7 +103,9 @@ An object representing your browser support matrix in the following format:
 * `FirefoxAndroid` or `and_ff` for Firefox for Android.
 * `ExplorerMobile` or `ie_mob` for Internet Explorer Mobile.
 
-###### Option: `reporter`
+***
+
+###### > `reporter`
 
 Type: `String`  
 Default: `null`
@@ -113,8 +119,9 @@ caniuse({
   reporter: 'console'
 });
 ```
+***
 
-###### Option: `gobalIgnores`
+###### > `gobalIgnores`
 
 Type: `Array`  
 Default: `[]`
@@ -128,6 +135,8 @@ caniuse({
   gobalIgnores: '_'
 });
 ```
+
+***
 
 ## License
 
