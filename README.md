@@ -13,9 +13,7 @@
 </p>
 
 <h4 align="center">
-  Check your JavaScript + browser support matrix against the
-  <a href='http://caniuse.com'>Can I Use</a>
-  database
+  Check your JavaScript against the <a href='http://caniuse.com'>Can I Use</a> database
 </h4>
 
 ***
