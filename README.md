@@ -1,3 +1,7 @@
+<h1 align="center">This project is DEPRECATED. It does not yet work as designed and should not be used.</h1>
+
+---
+
 <h1 align="center">node-caniuse</h1>
 
 <p align="center">
